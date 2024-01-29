@@ -1,9 +1,7 @@
-
-
 import className from "classnames";
 
 function Button ({
-    childern,
+    children,
     primary,
     secondary,
     success,
@@ -32,12 +30,11 @@ function Button ({
      'text-yellow-400':outline && warning,
      'text-red-500':outline && danger,
     }
-    
-    );
+   );
 
-    return (
+    return(
         <button {...rest} className={classes}>
-            {childern} 
+            {children} 
         </button>
     );
  }

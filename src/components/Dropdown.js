@@ -18,7 +18,8 @@ function Dropdown({ options, value, onChange }) {
       document.addEventListener('click', handler, true);
 
      return () => {
-        document.removeEventLister('click', handler);
+       
+        document.removeEventListener('click', handler);
      };
     }, []);
 
